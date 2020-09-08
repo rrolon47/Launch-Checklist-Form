@@ -34,6 +34,7 @@ window.addEventListener("load", function(){
          event.preventDefault();
       }  
       else {
+      //  faultyItems.style.visibility = 'visible'
       pilotStatus.innerHTML = `Pilot ${pilot.value} is ready.`;
       copilotStatus.innerHTML = `Co-pilot  ${copilot.value} is ready.`;
       fuel.value < 10000 ? fuelStatus.innerHTML = "Not enough fuel for the journey" : fuelStatus.innerHTML;
