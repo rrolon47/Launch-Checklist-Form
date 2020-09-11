@@ -65,8 +65,8 @@ window.addEventListener("load", function(){
       //  faultyItems.style.visibility = 'visible'
       pilotStatus.innerHTML = `Pilot ${pilot.value} is ready.`;
       copilotStatus.innerHTML = `Co-pilot  ${copilot.value} is ready.`;
-      fuel.value < 10000 ? fuelStatus.innerHTML = "Not enough fuel for the journey" : fuelStatus.innerHTML;
-      cargo.value > 10000 ? cargoStatus.innerHTML = "Too much mass for the shuttle to take off" : cargoStatus.innerHTML;
+      fuel.value < 10000 ? fuelStatus.innerHTML = "Not enough fuel for the journey" : fuelStatus.innerHTML = "Fuel level high enough for launch";
+      cargo.value > 10000 ? cargoStatus.innerHTML = "Too much mass for the shuttle to take off" : cargoStatus.innerHTML = "Cargo mass low enough for launch";
       fuel.value < 10000 || cargo.value > 10000 ? launchStatus.innerHTML = "Shuttle not ready for launch" : launchStatus.innerHTML = "Shuttle is ready for launch";
       fuel.value < 10000 || cargo.value > 10000 ? launchStatus.style.color = "red" : launchStatus.style.color = "green";
       fuel.value < 10000 || cargo.value > 10000 ? faultyItems.style.visibility = 'visible' : faultyItems.style.visibility;
